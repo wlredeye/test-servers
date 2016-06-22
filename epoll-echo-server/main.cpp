@@ -26,7 +26,7 @@ int main(int argc, const char * argv[]) {
     
     struct sockaddr_in SockAddr;
     SockAddr.sin_family = AF_INET;
-    SockAddr.sin_port = htons(12345);
+    SockAddr.sin_port = htons(8080);
     SockAddr.sin_addr.s_addr = htonl(INADDR_ANY);
     
     bind(MasterSocket, (struct sockaddr*)(&SockAddr), sizeof(SockAddr));
